@@ -10,9 +10,9 @@ function App() {
         <Hero />
       </section>
       <section id="Services">Parallax</section>
-      <section>Services</section>
+      <section id="">Services</section>
       <section id="Portfolio">Parallax</section>
-      <section id="Portfolio">Portfolio1</section>
+      <section id="">Portfolio1</section>
       <section id="">Portfolio2</section>
       <section id="">Portfolio3</section>
       <section id="Contact">Contact</section>

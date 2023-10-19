@@ -25,6 +25,21 @@ const textVariants = {
   },
 };
 
+const imgVariants = {
+  initial: {
+    x: 500,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 const sliderVariants = {
   initial: {
     x: 0,
@@ -66,9 +81,6 @@ function Hero() {
             animate="scrollButtons"
           />
         </motion.div>
-        <div className="imageContainer">
-          <img src="/agus-kotak.png" alt="" />
-        </div>
         <motion.div
           className="slidingTextContainer"
           variants={sliderVariants}
@@ -76,6 +88,15 @@ function Hero() {
           animate="animate"
         >
           React Frontend Developer and UI Designer
+        </motion.div>
+        <motion.div className="imageContainer" variants={imgVariants}>
+          <motion.img
+            src="/agus-kotak.png"
+            alt=""
+            variants={imgVariants}
+            initial="initial"
+            animate="animate"
+          />
         </motion.div>
       </div>
     </div>

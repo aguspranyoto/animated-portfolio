@@ -19,17 +19,22 @@ function Navbar() {
         >
           Aguud
         </motion.span>
-        <div className="social">
-          <a href="#">
+        <motion.div
+          className="social"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <a href="https://www.linkedin.com/in/aguspranyoto/" target="blank">
             <LinkedInIcon />
           </a>
-          <a href="#">
+          <a href="#https://github.com/aguspranyoto" target="blank">
             <GitHubIcon />
           </a>
-          <a href="#">
-            <InstagramIcon />
+          <a href="https://www.instagram.com/aguud" target="blank">
+            <InstagramIcon fontSize="medium" />
           </a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
