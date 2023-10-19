@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.scss";
 import { motion } from "framer-motion";
+import Typed from "react-typed";
 
 const textVariants = {
   initial: {
@@ -64,7 +65,19 @@ function Hero() {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>AGUS PRANYOTO</motion.h2>
+          <motion.h2 variants={textVariants}>
+            <Typed
+              strings={[
+                "...",
+                "HI...",
+                "WELCOME TO MY WEBSITE",
+                "MY NAME IS...",
+                "AGUS PRANYOTO",
+              ]}
+              typeSpeed={50}
+              backSpeed={20}
+            />
+          </motion.h2>
           <motion.h1 variants={textVariants}>
             Frontend Developer and UI Designer
           </motion.h1>
