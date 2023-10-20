@@ -36,7 +36,6 @@ const imgVariants = {
     opacity: 1,
     transition: {
       duration: 1,
-      staggerChildren: 0.1,
     },
   },
 };
@@ -76,6 +75,7 @@ function Hero() {
               ]}
               typeSpeed={50}
               backSpeed={20}
+              loop
             />
           </motion.h2>
           <motion.h1 variants={textVariants}>

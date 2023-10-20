@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  color: black;
+  color: white;
 
   .bg {
     z-index: 999;
@@ -13,7 +13,7 @@
     left: 0;
     bottom: 0;
     width: 400px;
-    background: white;
+    background: orangered;
 
     .links {
       position: absolute;
@@ -42,6 +42,7 @@
     left: 25px;
     background-color: transparent;
     border: none;
+    color: white;
     cursor: pointer;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
