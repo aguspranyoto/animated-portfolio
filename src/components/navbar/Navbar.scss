@@ -15,11 +15,18 @@
       justify-content: flex-end;
       padding: 20px;
     }
+    @include mobile-768 {
+      justify-content: flex-end;
+      padding: 20px;
+    }
 
     span {
       font-weight: bold;
 
       @include mobile-360 {
+        display: none;
+      }
+      @include mobile-768 {
         display: none;
       }
     }

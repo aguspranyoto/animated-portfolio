@@ -17,7 +17,7 @@ function App() {
       <section id="Services">
         <Parallax type="services" />
       </section>
-      {/* <section id="">
+      <section id="">
         <Services />
       </section>
       <section id="Portfolio">
@@ -28,7 +28,7 @@ function App() {
 
       <section id="Contact">
         <Contact />
-      </section> */}
+      </section>
     </div>
   );
 }
