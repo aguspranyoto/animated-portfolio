@@ -1,7 +1,13 @@
+@import "../../app.scss";
+
 .hero {
   height: calc(100vh - 100px);
   background-color: linier-gradient(180deg, #0c0c1d, #111132);
   overflow: hidden;
+
+  @include mobile-360 {
+    overflow: hidden;
+  }
 
   .wrapper {
     max-width: 1366px;
@@ -11,6 +17,10 @@
     justify-content: space-between;
     align-items: center;
 
+    @include mobile-360 {
+      flex-direction: column;
+    }
+
     .textContainer {
       width: 50%;
       height: 100%;
@@ -19,14 +29,33 @@
       justify-content: center;
       gap: 40px;
 
+      @include mobile-360 {
+        order: 2;
+        height: 50%;
+        width: 90%;
+
+        gap: 20px;
+
+        align-items: center;
+        text-align: center;
+      }
+
       h2 {
         font-size: 30px;
         color: orangered;
         letter-spacing: 8px;
+
+        @include mobile-360 {
+          min-height: 84px;
+        }
       }
 
       h1 {
         font-size: 68px;
+
+        @include mobile-360 {
+          font-size: 36px;
+        }
       }
 
       .buttons {
@@ -57,6 +86,10 @@
               color: white;
             }
           }
+
+          @include mobile-360 {
+            font-size: 12px;
+          }
         }
       }
 
@@ -84,6 +117,11 @@
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
+
+        @include mobile-360 {
+          width: 300px;
+          margin-top: 20px;
+        }
       }
     }
   }

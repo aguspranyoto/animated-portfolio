@@ -26,3 +26,27 @@ a {
 
   font-family: "DM Sans", sans-serif;
 }
+
+@mixin mobile-360 {
+  @media (max-width: 360px) {
+    @content;
+  }
+}
+
+@mixin mobile-738 {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
