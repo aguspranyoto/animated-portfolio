@@ -34,6 +34,11 @@
       color: gray;
       text-align: right;
 
+      @include mobile-768 {
+        width: 70%;
+        align-self: flex-end;
+        margin-right: 10px;
+      }
       @include mobile-360 {
         width: 70%;
         align-self: flex-end;
@@ -47,7 +52,7 @@
       border-top: 0.5px solid gray;
 
       @include mobile-768 {
-        width: 300px;
+        width: 600px;
       }
 
       @include mobile-360 {
@@ -83,8 +88,8 @@
         object-fit: cover;
 
         @include mobile-360 {
-          width: 300px;
-          height: 120px;
+          width: 200px;
+          height: 50px;
         }
       }
 
@@ -133,7 +138,7 @@
       justify-content: space-between;
 
       @include mobile-360 {
-        border: none;
+        // border: none;
         align-items: center;
         gap: 20px;
         padding: 10px;
