@@ -58,7 +58,7 @@
       stroke: orange;
       position: absolute;
       margin: auto;
-      z-index: 33;
+      z-index: -1;
 
       @include mobile {
         margin-left: auto;
@@ -83,6 +83,7 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+      margin-bottom: 40px;
 
       input,
       textarea {
@@ -103,6 +104,7 @@
         background-color: orange;
         cursor: pointer;
         font-weight: 500;
+
         @include mobile {
           padding: 10px;
         }

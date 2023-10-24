@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  color: white;
+  color: black;
 
   .bg {
     z-index: 999;
@@ -15,7 +15,7 @@
     left: 0;
     bottom: 0;
     width: 400px;
-    background: orangered;
+    background: white;
 
     @include mobile {
       width: 100%;
@@ -52,7 +52,7 @@
     left: 25px;
     background-color: transparent;
     border: none;
-    color: white;
+    color: black;
     cursor: pointer;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;

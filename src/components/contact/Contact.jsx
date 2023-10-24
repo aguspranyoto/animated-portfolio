@@ -5,11 +5,11 @@ import emailjs from "@emailjs/browser";
 
 const variants = {
   initial: {
-    y: 500,
+    x: -5,
     opacity: 0,
   },
   animate: {
-    y: 0,
+    x: 0,
     opacity: 1,
     transition: {
       duration: 0.5,
@@ -52,7 +52,7 @@ function Contact() {
       className="contact"
       variants={variants}
       initial="initial"
-      whileInView="animate"
+      whileInView={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>Let’s Work Together</motion.h1>
