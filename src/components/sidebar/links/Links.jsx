@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const variants = {
@@ -23,9 +23,9 @@ const itemVariants = {
   },
 };
 
-const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
+const items = ["Homepage", "Services", "Portfolio", "Contact"];
 
-function Links() {
+function Links({ setOpen }) {
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
@@ -35,6 +35,7 @@ function Links() {
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => setOpen((prev) => !prev)}
         >
           {item}
         </motion.a>

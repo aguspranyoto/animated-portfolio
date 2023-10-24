@@ -16,17 +16,17 @@ function App() {
         <Hero />
       </section>
 
-      <section id="Services">
+      {/* <section id="Services">
         <Parallax type="services" />
-      </section>
+      </section> */}
 
-      <section id="">
+      <section id="Services">
         <Services />
       </section>
 
-      <section id="Portfolio">
+      {/* <section id="Portfolio">
         <Parallax type="portfolio" />
-      </section>
+      </section> */}
 
       <Portfolio />
 

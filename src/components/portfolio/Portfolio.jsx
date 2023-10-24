@@ -70,7 +70,7 @@ function Portfolio() {
   });
 
   return (
-    <div className="portfolio" ref={ref}>
+    <div className="portfolio" id="Portfolio" ref={ref}>
       <div className="progress">
         <h1>Featured Works</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>

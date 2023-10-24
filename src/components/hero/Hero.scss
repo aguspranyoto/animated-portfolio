@@ -14,6 +14,7 @@
     align-items: center;
 
     @include mobile {
+      justify-content: flex-start;
       flex-direction: column;
       overflow: hidden;
     }
@@ -120,8 +121,7 @@
         -o-border-radius: 50%;
 
         @include mobile {
-          width: 300px;
-          margin-top: 20px;
+          width: 200px;
         }
       }
     }

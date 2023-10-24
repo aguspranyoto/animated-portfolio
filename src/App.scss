@@ -27,6 +27,12 @@ a {
   font-family: "DM Sans", sans-serif;
 }
 
+@media only screen and (max-width: 738px) {
+  section {
+    scroll-snap-align: none;
+  }
+}
+
 @mixin mobile {
   @media (max-width: 738px) {
     @content;
