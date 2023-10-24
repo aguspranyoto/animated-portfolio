@@ -13,12 +13,9 @@
     justify-content: space-between;
     align-items: center;
 
-    @include mobile-360 {
+    @include mobile {
       flex-direction: column;
-    }
-
-    @include mobile-768 {
-      flex-direction: column;
+      overflow: hidden;
     }
 
     .textContainer {
@@ -29,18 +26,7 @@
       justify-content: center;
       gap: 40px;
 
-      @include mobile-360 {
-        order: 2;
-        height: 50%;
-        width: 90%;
-
-        gap: 20px;
-
-        align-items: center;
-        text-align: center;
-      }
-
-      @include mobile-768 {
+      @include mobile {
         order: 2;
         height: 50%;
         width: 90%;
@@ -56,10 +42,7 @@
         color: orangered;
         letter-spacing: 8px;
 
-        @include mobile-768 {
-          font-size: 24px;
-        }
-        @include mobile-360 {
+        @include mobile {
           font-size: 24px;
           min-height: 64px;
         }
@@ -68,11 +51,7 @@
       h1 {
         font-size: 68px;
 
-        @include mobile-768 {
-          font-size: 36px;
-        }
-
-        @include mobile-360 {
+        @include mobile {
           font-size: 36px;
         }
       }
@@ -106,11 +85,7 @@
             }
           }
 
-          @include mobile-768 {
-            font-size: 24px;
-          }
-
-          @include mobile-360 {
+          @include mobile {
             font-size: 12px;
           }
         }
@@ -130,6 +105,9 @@
       width: 50%;
       font-weight: bold;
       z-index: -999;
+      @include mobile {
+        display: none;
+      }
     }
 
     .imageContainer {
@@ -141,12 +119,7 @@
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
 
-        @include mobile-768 {
-          width: 400px;
-          margin-top: 20px;
-        }
-
-        @include mobile-360 {
+        @include mobile {
           width: 300px;
           margin-top: 20px;
         }

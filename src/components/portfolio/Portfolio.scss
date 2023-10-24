@@ -12,7 +12,7 @@
     color: orange;
     font-size: 36px;
 
-    @include mobile-360 {
+    @include mobile {
       padding-top: calc(100vh - 180px);
       font-size: 24px;
     }
@@ -40,7 +40,7 @@
       justify-content: center;
       gap: 50px;
 
-      @include mobile-360 {
+      @include mobile {
         flex-direction: column;
       }
 
@@ -48,7 +48,7 @@
         flex: 1;
         height: 50%;
 
-        @include mobile-360 {
+        @include mobile {
           width: 100%;
           max-height: 300px;
         }
@@ -58,7 +58,7 @@
           height: 100%;
           object-fit: cover;
 
-          @include mobile-360 {
+          @include mobile {
             object-fit: contain;
           }
         }
@@ -70,7 +70,7 @@
         flex-direction: column;
         gap: 30px;
 
-        @include mobile-360 {
+        @include mobile {
           transform: none !important;
           padding: 10px;
           align-items: center;
@@ -80,7 +80,7 @@
         h2 {
           font-size: 72px;
 
-          @include mobile-360 {
+          @include mobile {
             font-size: 36px;
           }
         }
@@ -89,7 +89,7 @@
           color: gray;
           font-size: 20px;
 
-          @include mobile-360 {
+          @include mobile {
             font-size: 16px;
           }
         }

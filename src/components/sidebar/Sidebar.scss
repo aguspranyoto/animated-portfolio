@@ -17,8 +17,8 @@
     width: 400px;
     background: orangered;
 
-    @include mobile-360 {
-      width: 200px;
+    @include mobile {
+      width: 100%;
     }
 
     .links {
@@ -34,8 +34,8 @@
       a {
         font-size: 40px;
 
-        @include mobile-360 {
-          font-size: 20px;
+        @include mobile {
+          margin-bottom: 20px;
         }
       }
     }

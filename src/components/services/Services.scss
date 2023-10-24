@@ -7,22 +7,13 @@
   justify-content: space-between;
 
   .textContainer {
-    flex: 1;
-
     align-self: flex-end;
     display: flex;
     align-items: center;
     gap: 20px;
+    margin: 40px 0;
 
-    @include mobile-768 {
-      align-self: center;
-      text-align: center;
-      flex-direction: column;
-      margin-top: 20px;
-    }
-
-    @include mobile-360 {
-      margin-top: 20px;
+    @include mobile {
       align-self: center;
       text-align: center;
       flex-direction: column;
@@ -34,12 +25,7 @@
       color: gray;
       text-align: right;
 
-      @include mobile-768 {
-        width: 70%;
-        align-self: flex-end;
-        margin-right: 10px;
-      }
-      @include mobile-360 {
+      @include mobile {
         width: 70%;
         align-self: flex-end;
         margin-right: 10px;
@@ -51,22 +37,19 @@
       border: none;
       border-top: 0.5px solid gray;
 
-      @include mobile-768 {
-        width: 600px;
-      }
-
-      @include mobile-360 {
+      @include mobile {
         width: 300px;
       }
     }
   }
   .titleContainer {
-    flex: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 40px 0;
 
-    @include mobile-360 {
+    @include mobile {
+      margin: 0 auto;
       width: 100%;
     }
 
@@ -75,7 +58,7 @@
       align-items: center;
       gap: 50px;
 
-      @include mobile-360 {
+      @include mobile {
         flex-direction: column;
         text-align: center;
         gap: 20px;
@@ -87,7 +70,7 @@
         border-radius: 50px;
         object-fit: cover;
 
-        @include mobile-360 {
+        @include mobile {
           width: 200px;
           height: 50px;
         }
@@ -97,21 +80,21 @@
         font-size: 96px;
         font-weight: 100;
 
-        @include mobile-360 {
+        @include mobile {
           font-size: 36px;
         }
       }
 
       button {
-        width: 300px;
-        height: 100px;
+        width: 200px;
+        height: 50px;
         border-radius: 50px;
         background-color: orange;
         border: none;
         font-size: 24px;
         cursor: pointer;
 
-        @include mobile-360 {
+        @include mobile {
           font-size: 16px;
           width: 150px;
           height: 50px;
@@ -120,12 +103,12 @@
     }
   }
   .listContainer {
-    flex: 2;
     display: flex;
     max-width: 1366px;
-    margin: auto;
+    margin: 40px auto;
 
-    @include mobile-360 {
+    @include mobile {
+      margin: 20px auto;
       flex-direction: column;
       width: 90%;
     }
@@ -137,15 +120,15 @@
       flex-direction: column;
       justify-content: space-between;
 
-      @include mobile-360 {
-        // border: none;
+      @include mobile {
+        border: none;
         align-items: center;
         gap: 20px;
         padding: 10px;
       }
 
       p {
-        @include mobile-360 {
+        @include mobile {
           display: none;
         }
       }
@@ -156,7 +139,7 @@
         border: none;
         cursor: pointer;
 
-        @include mobile-360 {
+        @include mobile {
           background-color: transparent;
           border: 1px solid orange;
           border-radius: 5px;

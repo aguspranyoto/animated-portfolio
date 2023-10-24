@@ -8,7 +8,7 @@
   align-items: center;
   gap: 50px;
 
-  @include mobile-360 {
+  @include mobile {
     width: 100%;
     padding: 10px;
     flex-direction: column;
@@ -21,7 +21,7 @@
     flex-direction: column;
     gap: 40px;
 
-    @include mobile-360 {
+    @include mobile {
       gap: 20px;
       text-align: center;
       align-items: center;
@@ -32,7 +32,7 @@
       font-size: 100px;
       line-height: 88px;
 
-      @include mobile-360 {
+      @include mobile {
         font-size: 36px;
         line-height: 42px;
         margin-bottom: 40px;
@@ -48,7 +48,7 @@
     flex: 1;
     position: relative;
 
-    @include mobile-360 {
+    @include mobile {
       margin-top: 36px;
       padding: 0 40px;
       width: 100%;
@@ -58,13 +58,21 @@
       stroke: orange;
       position: absolute;
       margin: auto;
-      z-index: -1;
+      z-index: 33;
+
+      @include mobile {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
 
       svg {
         width: 450px;
         height: 450px;
 
-        @include mobile-360 {
+        @include mobile {
           width: 200px;
           height: 200px;
         }
@@ -84,7 +92,7 @@
         color: white;
         border-radius: 5px;
 
-        @include mobile-360 {
+        @include mobile {
           padding: 10px;
         }
       }
@@ -95,7 +103,7 @@
         background-color: orange;
         cursor: pointer;
         font-weight: 500;
-        @include mobile-360 {
+        @include mobile {
           padding: 10px;
         }
       }
